@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Save the Date | Sarah & David</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Fonts (Playfair Display for elegance, Inter for body text) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script>
+        // Custom Tailwind Configuration for the specified palette
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-green': '#3f704d', // Deep Forest Green
+                        'accent-gold': '#d4af37',   // Elegant Gold
+                        'neutral-white': '#ffffff',
+                    },
+                    fontFamily: {
+                        'display': ['"Playfair Display"', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Custom styling for gold gradient background and shadow effects -->
+    
+</head>
+<body class="bg-primary-green min-h-screen flex items-center justify-center p-4 font-sans antialiased">
+
+    <!-- Wedding Card Container -->
+    <div id="wedding-card" class="wedding-card w-full max-w-lg mx-auto rounded-xl p-8 md:p-12 lg:p-16 text-center text-primary-green transform hover:scale-[1.01] transition duration-300">
+        
+        <!-- Header Section -->
+        <header class="mb-8">
+            <p class="text-lg md:text-xl mb-2 text-accent-gold font-display italic">Vocês estão na lista de convidados</p>
+            <h1 class="text-5xl md:text-7xl font-display font-bold leading-tight mb-4 text-primary-green golden-text-shadow">
+                Icaro & Ideli
+            </h1>
+            <h2 class="text-3xl md:text-4xl font-display text-primary-green border-b-2 border-accent-gold pb-4 inline-block px-4">
+                Save the Date
+            </h2>
+        </header>
+
+        <!-- Details Section -->
+        <div class="mb-10 space-y-4">
+            <p class="text-2xl md:text-3xl font-sans font-semibold text-primary-green">
+                Sábado, 4 de Abril<sup class="text-lg">th</sup>, 2026
+            </p>
+            <p class="text-xl md:text-2xl text-accent-gold font-display italic">
+                A cerimonia e festa ocorrerão no período da tarde.
+            </p>
+            <p class="text-lg md:text-xl text-primary-green">
+                Mairiporã, São Paulo
+            </p>
+        </div>
+
+        <!-- Countdown Timer Section -->
+        <div class="mb-10">
+            <p class="text-sm uppercase tracking-widest text-primary-green/80 mb-4">Contando os dias</p>
+            <div id="countdown" class="grid grid-cols-4 gap-3 md:gap-5">
+                <!-- Days Block -->
+                <div class="golden-gradient-bg text-primary-green rounded-lg p-3 shadow-lg">
+                    <div id="days" class="text-3xl md:text-5xl font-bold font-display">00</div>
+                    <div class="text-xs uppercase mt-1 font-semibold">Dias</div>
+                </div>
+                <!-- Hours Block -->
+                <div class="golden-gradient-bg text-primary-green rounded-lg p-3 shadow-lg">
+                    <div id="hours" class="text-3xl md:text-5xl font-bold font-display">00</div>
+                    <div class="text-xs uppercase mt-1 font-semibold">Horas</div>
+                </div>
+                <!-- Minutes Block -->
+                <div class="golden-gradient-bg text-primary-green rounded-lg p-3 shadow-lg">
+                    <div id="minutes" class="text-3xl md:text-5xl font-bold font-display">00</div>
+                    <div class="text-xs uppercase mt-1 font-semibold">Minutos</div>
+                </div>
+                <!-- Seconds Block -->
+                <div class="golden-gradient-bg text-primary-green rounded-lg p-3 shadow-lg">
+                    <div id="seconds" class="text-3xl md:text-5xl font-bold font-display">00</div>
+                    <div class="text-xs uppercase mt-1 font-semibold">Seconds</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer/Action Section -->
+        <footer class="mt-8 pt-4 border-t border-primary-green/30">
+            <p class="text-base md:text-lg text-primary-green mb-4 italic">
+                Convite oficial com detalhes do evento serão fornecidos mais tarde
+            </p>
+            <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NWQwaGdpamQ0ZmYxdG9wZTgwaGxwMGdyN2MgaWRlbGkuemFuZXNjb0Bt&amp;tmsrc=ideli.zanesco%40gmail.com" class="inline-block px-8 py-3 rounded-full text-lg font-semibold uppercase tracking-wider transition duration-300 transform hover:scale-105
+                            bg-accent-gold text-white shadow-xl hover:shadow-2xl hover:bg-opacity-90">
+                Adicionar ao calendário
+            </a>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript for Countdown Timer -->
+    <script src="app.js"> </script>
+    </body>
+</html>
